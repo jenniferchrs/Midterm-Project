@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="DesignFAQ.css">
+</head>
+
+<body>
+    <section class="header"> 
+        <img src="EnV-Logo.png">
+        <ul>
+          <li><a id = "navmenu" href = "index.html">HOME</a></li>
+          <li>|</li>
+          <li><a id = "navmenu" href = "PageProduct.html">PRODUCT</a></li>
+          <li>|</li>
+          <li><a id = "navmenu" href = "PageAboutUs.html">ABOUT US</a></li>
+          <li>|</li>
+          <li><a id = "navmenu" href = "PageOurTeam.html">OUR TEAM</a></li>
+          <li>|</li>
+          <li><a id = "navmenu" href = "PageFAQ.html">FAQ</a></li>
+          <li>|</li>
+          <li><a id = "navmenu" href = "PageVisitUs.html">VISIT US</a></li>
+      </ul>
+    </section>
+
+    <section class="body">
+        <h1>FREQUENTLY ASKED QUESTIONS</h1>
+    </section>
+
+    <section class="desc">
+        <table class="tab">
+            <tr>
+                <th><button type="button" class="collapsible"><h2>What is EnV?</h2></button>
+                  <div class="content">
+                    <p>EnV is an Indonesian e-commerce company. EnV provides technological solutions that empower 
+                      millions of merchants and support consumers to participate in the future of eco-friendly products commerce.</p>
+                  </div>
+                  <button type="button" class="collapsible"><h2>What kind of business can be a partnership with EnV?</h2></button>
+                  <div class="content">
+                    <p>Naturally, a business that sells eco-friendly products.</p>
+                  </div>
+                  <button type="button" class="collapsible"><h2>My company or me is interested to partner with EnV. Where should we go?</h2></button>
+                  <div class="content">
+                    <p>We are always open to possibilities in having collaboration with potential partners! You can contact us through our contact 
+                      information below or directly send your proposal to our email at environmentalist@ftmm.unair.ac.id</p>
+                  </div>
+                  <button type="button" class="collapsible"><h2>Other inquiries?</h2></button>
+                  <div class="content">
+                    <p>Contact us on (environmentalist@ftmm.unair.ac.id / WA Business +62 812-3456-7890)</p>
+                  </div>
+                </th>
+                <th><img class="floating" src="nature.png"> </th>
+            </tr>
+        </table>
+    </section>
+</body>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+</script>   
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="DesignOurTeam.css">
+</head>
+
+<body>
+    <section class="header"> 
+        <img src="EnV-Logo.png">
+        <ul>
+            <li><a id = "navmenu" href = "index.html">HOME</a></li>
+            <li>|</li>
+            <li><a id = "navmenu" href = "PageProduct.html">PRODUCT</a></li>
+            <li>|</li>
+            <li><a id = "navmenu" href = "PageAboutUs.html">ABOUT US</a></li>
+            <li>|</li>
+            <li><a id = "navmenu" href = "PageOurTeam.html">OUR TEAM</a></li>
+            <li>|</li>
+            <li><a id = "navmenu" href = "PageFAQ.html">FAQ</a></li>
+            <li>|</li>
+            <li><a id = "navmenu" href = "PageVisitUs.html">VISIT US</a></li>
+        </ul>
+    </section>
+
+    <section class = "body">
+        <h1>OUR TEAM</h1>
+    </section>
+
+    <section class="profile">
+        <div class="container">
+            <img class="image" alt="Avatar" class="image" src="JenniferChristine.png">
+            <div class="middle">
+                <div class="text">Jennifer Christine<br>162112133023</div>
+            </div> 
+        </div>
+        <div class="container">
+            <img class="image" alt="Avatar" class="image" src="NabilaDienJasmine.png">
+            <div class="middle">
+                <div class="text">Nabile Dien Jasmine<br>162112133056</div>
+            </div> 
+        </div>
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+    </section>
+        
+</body>
+
+<script>
+    var coll = document.getElementsByClassName("container");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+</script>   
+
+</html>

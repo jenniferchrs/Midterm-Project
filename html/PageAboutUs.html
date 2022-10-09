@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="DesignAboutUs.css">
+</head>
+
+<body>
+    <section class="header"> 
+        <img src="EnV-Logo.png">
+        <ul>
+            <li><a id = "navmenu" href = "index.html">HOME</a></li>
+            <li>|</li>
+            <li><a id = "navmenu" href = "PageProduct.html">PRODUCT</a></li>
+            <li>|</li>
+            <li><a id = "navmenu" href = "PageAboutUs.html">ABOUT US</a></li>
+            <li>|</li>
+            <li><a id = "navmenu" href = "PageOurTeam.html">OUR TEAM</a></li>
+            <li>|</li>
+            <li><a id = "navmenu" href = "PageFAQ.html">FAQ</a></li>
+            <li>|</li>
+            <li><a id = "navmenu" href = "PageVisitUs.html">VISIT US</a></li>
+        </ul>
+    </section>
+
+    <section class = "body">
+        <h1>ABOUT US</h1>
+        <h2>We are some people from 276 million persons in our country who care about the environment.</h2>
+    </section>
+
+    <section class = "context">
+        <table class = "about">
+            <tr class="teams">
+                <th><image style="margin-left:0px" src="team.png"></image></th>
+                <th><image style="margin-left:0px" src="team.png"></image></th>
+                <th><image style="margin-left:0px" src="team.png"></image></th>
+            </tr>
+            <tr>
+                <td>College students of Airlangga University, Surabaya who are encouraged to be environmentalists. 
+                    We are young agents and are challenged to keep the earth for a better future.</td>
+                <td>We provide data and information about some things you might need for those who are also encouraged to be environmentalists.</td>
+                <td>When you should take action?<br>Check the facts below!<br>Let's save our earth together&#128149</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class = "rank">
+        <table class = "center">
+            <tr>
+                <th><div id="num1">#2</div></th>
+                <th><div id="num2">64</div></th>
+                <th><div id="num3">3,2</div></th>
+            </tr>
+            <tr>
+                <td>COUNTRIES THAT PRODUCE<br>THE MOST PLASTIC WASTE</td>
+                <td>MILLION TONS PLASTIC WASTE<br>EVERY YEAR</td>
+                <td>MILLION TONS PLASTIC WASTE<br>EMITTED TO THE OCEAN</td>
+            </tr>
+        </table>
+    </section>
+
+</body>
+
+<script>
+    function countTo(){
+    let from = 0;
+    let to = 64;
+    let step = to > from ? 1 : -1;
+    let interval = 64;
+
+    if(from == to){
+        document.querySelector("#num2").textContent = from;
+        return;
+    }
+
+    let counter = setInterval(function(){
+        from += step;
+        document.querySelector("#num2").textContent = from;
+
+        if(from == to){
+            clearInterval(counter);
+        }
+    }, interval);
+}
+countTo();
+</script>
+
+</html>
